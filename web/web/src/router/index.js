@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 
 import layout from '@/views/layout'
 import userMsg from '@/views/userManage/userMsg.vue'
-import pro1 from '@/views/pro1/pro1.vue'
+import login from '@/views/login/login.vue'
 import pro2 from '@/views/pro2/pro2.vue'
 
 Vue.use(Router)
@@ -30,9 +30,9 @@ export default new Router({
           component: userMsg,
         },
         {
-          path: '/pro1',
-          name: 'pro1',
-          component: pro1,
+          path: '/login',
+          name: 'login',
+          component: login,
         },
         {
           path: '/pro2',
