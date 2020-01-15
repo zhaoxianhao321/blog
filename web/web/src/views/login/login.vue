@@ -60,8 +60,7 @@ export default {
     submitForm (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          alert('submit!');
-          this.$api.get('/login', this.ruleForm);
+          console.log(this.$api.get('/login', this.ruleForm));
         } else {
           console.log('error submit!!');
           return false;

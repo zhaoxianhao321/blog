@@ -30,7 +30,7 @@
               <span slot="title">
                 <!-- 用path跳转，要用query，目标页面用this.$route.query获取参数 -->
                 <!-- to的值可以是一个字符串，直接用path地址 -->
-                <router-link :to="{path:'/login',query:{msg:'我是pro1'}}"><span class="router_text">登陆</span></router-link>
+                <router-link :to="{path:'/Login',query:{msg:'我是pro1'}}"><span class="router_text">登陆</span></router-link>
               </span>
             </el-menu-item>
             <el-menu-item index="2">

@@ -30,7 +30,7 @@ export default new Router({
           component: userMsg,
         },
         {
-          path: '/login',
+          path: '/Login',
           name: 'login',
           component: login,
         },
