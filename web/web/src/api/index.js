@@ -2,7 +2,7 @@ import axios from 'axios'
 
 //创建axios实例
 const instance = axios.create({
-    baseURL: 'http://localhost:8080', // api的base_url
+    baseURL: 'http://localhost:3000', // api的base_url
     timeout: 10000,                       // 请求超时时间
 })
 
@@ -29,7 +29,7 @@ const post = function (url, params) {
         instance({
           	url: url,
             method: 'post',
-            params: params
+            data: params
         }).then(res=> {
             resolve(res);
         }).catch(error => {reject(error);

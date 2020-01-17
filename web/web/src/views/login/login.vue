@@ -58,9 +58,10 @@ export default {
   },
   methods: {
     submitForm (formName) {
-      this.$refs[formName].validate((valid) => {
+      this.$refs[formName].validate(async (valid) => {
         if (valid) {
-          console.log(this.$api.get('/login', this.ruleForm));
+          const { data } = await this.$api.post('/web/reg', this.ruleForm);
+          console.log(data);
         } else {
           console.log('error submit!!');
           return false;
