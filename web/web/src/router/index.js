@@ -6,19 +6,33 @@ import layout from '@/views/layout'
 import userMsg from '@/views/userManage/userMsg.vue'
 import login from '@/views/login/login.vue'
 import pro2 from '@/views/pro2/pro2.vue'
-
+import index from '@/views/index.vue'
+import firstPage from '@/views/pages/firstPage.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // },
+    {
+      path: '/',
+      name: 'index',
+      component: index,
+      redirect: 'firstPage', 
+      children:[
+        {
+          path: '/Login',
+          name: 'login',
+          component: login,
+        },
+        {
+          path: '/firstPage',
+          name: 'firstPage',
+          component: firstPage,
+        },
+      ]
+    },
     {
       // 但只加载父组件，子组件不会渲染
-      path: '/',
+      path: '/projectManage',
       name: 'projectManage',
       component: layout,
       redirect: 'userMsg',   // 加上重定向，使加载layout组件时也加载子组件userMsg

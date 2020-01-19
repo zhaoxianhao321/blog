@@ -1,36 +1,44 @@
 <template>
   <div class="container">
-    <el-form
-      :model="ruleForm"
-      :rules="rules"
-      ref="ruleForm"
-      label-width="100px"
-      class="demo-ruleForm"
-    >
-      <el-form-item
-        label="用户名"
-        prop="user"
+    <el-row :gutter="20">
+      <el-col
+        :span="8"
+        :offset="8"
       >
-        <el-input v-model="ruleForm.user"></el-input>
-      </el-form-item>
-      <el-form-item
-        label="密码"
-        prop="pass"
-      >
-        <el-input
-          type="password"
-          v-model="ruleForm.pass"
-          autocomplete="off"
-        ></el-input>
-      </el-form-item>
-      <el-form-item>
-        <el-button
-          type="primary"
-          @click="submitForm('ruleForm')"
-        >登陆</el-button>
-        <el-button @click="resetForm('ruleForm')">重置</el-button>
-      </el-form-item>
-    </el-form>
+        <el-form
+          :model="ruleForm"
+          :rules="rules"
+          ref="ruleForm"
+          label-width="100px"
+          class="demo-ruleForm"
+        >
+          <el-form-item
+            label="用户名"
+            prop="user"
+          >
+            <el-input v-model="ruleForm.user"></el-input>
+          </el-form-item>
+          <el-form-item
+            label="密码"
+            prop="pass"
+          >
+            <el-input
+              type="password"
+              v-model="ruleForm.pass"
+              autocomplete="off"
+            ></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button
+              type="primary"
+              @click="submitForm('ruleForm')"
+            >登陆</el-button>
+            <el-button @click="resetForm('ruleForm')">重置</el-button>
+          </el-form-item>
+        </el-form>
+      </el-col>
+    </el-row>
+
   </div>
 </template>
 
@@ -80,6 +88,6 @@ export default {
 
 <style lang="less" scoped>
 .container {
-  padding-top: 100px;
+  top: 290px;
 }
 </style>

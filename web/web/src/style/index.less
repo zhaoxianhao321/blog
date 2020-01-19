@@ -1,8 +1,13 @@
 @color-style: #606266;
+@red-style: #D92E2E;
 
 .text_font(@color) {
   color: @color;
-  font-size: 17px;
+  font-size: 23px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .center {
@@ -13,4 +18,9 @@
   .center:first-child {
     display: inline-block;
   }
+}
+
+.padding_top_30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
