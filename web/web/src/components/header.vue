@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="header_img">
-      <img src="../../static/rick.gif">
+      <img src="../../static/rick02.gif">
     </div>
     <div class="navMenu">
       <el-row :gutter="20">
@@ -18,6 +18,9 @@
           >{{item.label}}</span>
         </el-col>
       </el-row>
+    </div>
+    <div class="header_img">
+      <img src="../../static/modi.gif">
     </div>
   </div>
 </template>
@@ -62,7 +65,10 @@ export default {
   display: flex;
 }
 .header_img {
-  height: 107px;
+  img {
+    height: 108px;
+    width: 108px;
+  }
 }
 .navMenu {
   z-index: 3;

@@ -6,12 +6,15 @@
         :span="4"
       >
         <div>
-          <img
-            src="../../../static/github.jpg"
-            class="pic_mid"
-          /><br />
-          <span class="line"></span><br />
-          <span>本人的github地址</span>
+          <a
+            href="https://github.com/zhaoxianhao321"
+            target="_blank"
+          > <img
+              src="../../../static/github.jpg"
+              class="pic_mid"
+            /><br />
+            <span class="line"></span><br />
+            <span class="white_color">本人的github地址</span> </a>
         </div>
       </el-col>
       <el-col
@@ -19,12 +22,15 @@
         :span="4"
       >
         <div>
-          <img
-            src="../../../static/apple.png"
-            class="pic_mid"
-          /><br />
-          <span class="line"></span><br />
-          <span>CSDN论坛</span>
+          <a
+            href="https://blog.csdn.net/weixin_42520375"
+            target="_blank"
+          > <img
+              src="../../../static/apple.png"
+              class="pic_mid"
+            /><br />
+            <span class="line"></span><br />
+            <span class="white_color">CSDN论坛</span> </a>
         </div>
       </el-col>
       <el-col
@@ -37,7 +43,7 @@
             class="pic_mid"
           /><br />
           <span class="line"></span><br />
-          <span>本博客采没啥技术含量</span>
+          <span>这个博客土爆了</span>
         </div>
       </el-col>
       <el-col
@@ -110,5 +116,11 @@ export default {
   border: 2px solid white;
   border-radius: 10px;
   margin: 4px 0;
+}
+.white_color {
+  color: white;
+}
+a {
+  text-decoration: none;
 }
 </style>
