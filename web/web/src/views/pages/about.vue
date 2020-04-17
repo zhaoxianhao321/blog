@@ -37,7 +37,7 @@
             class="pic_mid"
           /><br />
           <span class="line"></span><br />
-          <span>本博客采没啥技术含量</span>
+          <span>本博客采用技术栈vue+element+axios+node.js+mysql</span>
         </div>
       </el-col>
       <el-col
@@ -64,45 +64,39 @@ import * as blogCustom from "@/assets/js/blog.config.js";
 export default {
   data () {
     return {
-      menuList: blogCustom.head.menu,
     }
   },
   created () {
   },
   mounted () {
+
   },
   methods: {
-    jump (url) {
-      this.$router.push({
-        path: url
-      })
-    }
+
   },
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less"  scoped>
 @import "../../style/index.less";
 .flex_1 {
-  background: #303133;
   flex: 1;
   top: 160px;
-  padding: 100px 0;
 }
 .el-col > div {
   width: 100%;
-  height: 330px;
+  height: 500px;
   background: #000000;
   border-radius: 6px;
   transform: perspective(200px) rotateY(0);
   transition: 1s all ease;
   &:hover {
-    transform: perspective(600px) rotateY(20deg);
+    transform: perspective(600px) rotateY(10deg);
   }
 }
 .pic_mid {
-  width: 100px;
-  height: 100px;
+  width: 260px;
+  height: 260px;
 }
 .line {
   display: inline-block;

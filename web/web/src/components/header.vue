@@ -1,12 +1,7 @@
 <template>
   <div class="main">
-    <div
-      class="header_img"
-      :style="bg"
-    > <img
-        id="pic"
-        src="../../static/index.jpg"
-      >
+    <div class="header_img">
+      <img src="../../static/rick.gif">
     </div>
     <div class="navMenu">
       <el-row :gutter="20">
@@ -21,13 +16,6 @@
             class="text_font"
             @click="jump(item.redirectUrl)"
           >{{item.label}}</span>
-        </el-col>
-        <el-col
-          :span="4"
-          :offset="2"
-          class="padding_top"
-        >
-          <span class="top_mar">个人github地址</span><img src="../../static/github.png">
         </el-col>
       </el-row>
     </div>
@@ -70,16 +58,11 @@ export default {
 <style lang="less" >
 @import "../style/index.less";
 .main {
-  position: relative;
-  height: 1080px;
+  background: #303133;
+  display: flex;
 }
 .header_img {
-  position: fixed;
-  top: 0px;
-  z-index: 1;
-}
-#pic {
-  width: 100%;
+  height: 107px;
 }
 .navMenu {
   z-index: 3;

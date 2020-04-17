@@ -7,7 +7,9 @@
     </el-header>
     <!-- body -->
     <el-container>
+      <div class="right"></div>
       <router-view />
+      <div class="left"></div>
     </el-container>
   </el-container>
 </template>
@@ -25,13 +27,14 @@ export default {
 <style lang="less" scoped>
 .el-header {
   padding: 0px !important;
+  height: 115px !important;
 }
 .el-container {
   display: flex;
 }
-.el-container > div {
-  z-index: 3;
-  position: relative;
-  width: 100%;
+.right,
+.left {
+  width: 300px;
+  height: 100px;
 }
 </style>
