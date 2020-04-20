@@ -62,10 +62,10 @@ export default {
 @import "../style/index.less";
 .main {
   background: #303133;
-  display: flex;
+  display: flex; 
 }
 .header_img {
-  img {
+  img { 
     height: 108px;
     width: 108px;
   }
@@ -101,3 +101,4 @@ export default {
   margin-bottom: 8px;
 }
 </style>
+ 

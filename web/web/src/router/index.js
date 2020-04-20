@@ -9,6 +9,7 @@ import pro2 from '@/views/pro2/pro2.vue'
 import index from '@/views/index.vue'
 import firstPage from '@/views/pages/firstPage.vue'
 import about from '@/views/pages/about.vue'
+import writer from'@/views/writer/writer.vue';
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
           path: '/about',
           name: 'about',
           component: about,
+        },
+        {
+          path: '/writer',
+          name: 'writer',
+          component: writer,
         },
       ]
     },
